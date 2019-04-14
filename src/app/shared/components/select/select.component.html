@@ -1,0 +1,11 @@
+<div class="select-wrapper">
+  <label>{{label}}</label>
+  <mat-form-field>
+    <mat-label>{{inputLabel}}</mat-label>
+    <mat-select [formControl]="control">
+      <mat-option *ngFor="let i of items" [value]="i.id">
+        {{i.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between">
+  <app-select [label]="''" [control]="form.get('from')" [items]="from" [disabled]="true"></app-select>
+  <app-select [label]="''" [control]="form.get('to')" [items]="to" [disabled]="true"></app-select>
+</div>
+<h4 class="font-weight-bold text-center">{{form.get('date').value | date: 'EEEE, MMMM d'}}</h4>
+<app-riders-card></app-riders-card>
+<p>Congratulations on positing your rude! We`ll let you know when someone joins you!</p>
+<div class="text-center">
+  <button class="btn btn-primary align">Close window</button>
+</div>

@@ -1,0 +1,50 @@
+label {
+  display: block;
+}
+
+input {
+  border-radius: 6px;
+  border: 1.2px solid #1c00bf;
+  width: 85px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 2px #1c00bf;
+  transition: 0.3s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+  opacity: 1;
+
+}
+
+.input-container {
+  position: relative;
+}
+
+.padding {
+  padding-left: 12px;
+}
+
+.input-container span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3px 3px;
+  color: #000;
+  transform: translate(0, 100%);
+  transition: 0.3s;
+}
+
+.disabled {
+  color: #3333!important;
+}
+
+.disabledInput {
+  border: 1.2px solid #3333;
+  color: #3333;
+}

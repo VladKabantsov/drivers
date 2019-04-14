@@ -1,0 +1,18 @@
+.rider-card-container {
+  margin: 5px 15px;
+  font-size: 0.85em;
+}
+
+.rider-card-container small {
+  color: #8c8c8c;
+}
+
+.btn {
+  padding: 4px 4px;
+  font-size: 0.85em;
+}
+
+.col-3 {
+  padding-right: 5px;
+  padding-left: 5px;
+}

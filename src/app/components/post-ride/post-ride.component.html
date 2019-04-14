@@ -1,0 +1,15 @@
+<h3 class="font-weight-bold">Enter ride details!</h3>
+<app-input-number class="top-indent" [control]="form.get('willing')" [label]="'How many riders are you willing to take?'"></app-input-number>
+<label class="top-indent">Please provide the prices</label>
+<div class="row">
+  <app-input-number class="col-4" [label]="'1px'" [control]="form.get('price1')" [showBax]="true" [disabled]="disable1"></app-input-number>
+  <app-input-number class="col-4" [label]="'2px'" [control]="form.get('price2')" [showBax]="true" [disabled]="disable2"></app-input-number>
+  <app-input-number class="col-4" [label]="'3px'" [control]="form.get('price3')" [showBax]="true" [disabled]="disable3"></app-input-number>
+</div>
+<div class="checkboxes-container top-indent">
+  <app-checkbox [control]="agreeFbProfile" [label]="'I agree to share my facebook profile with riders'"></app-checkbox>
+  <app-checkbox [control]="agreeTerms" [label]="'I agree to the terms and conditions'"></app-checkbox>
+</div>
+<div class="text-center">
+  <button class="btn btn-primary align">Post my ride</button>
+</div>

@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between">
+  <app-select [label]="'From:'" [control]="form.get('from')" [items]="from"></app-select>
+  <app-select [label]="'To:'" [control]="form.get('to')" [items]="to"></app-select>
+</div>
+<app-riders-card></app-riders-card>
+<app-riders-card></app-riders-card>
+<div class="text-center">
+  <button class="btn btn-primary align">Post a new ride!</button>
+</div>

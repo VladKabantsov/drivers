@@ -1,0 +1,9 @@
+<div class="input-container">
+  <label [class.disabled]="disabled">{{label}}</label>
+  <input type="number"
+         [min]="0"
+         [formControl]="control" [ngClass]="{'padding': showBax, 'text-center': !showBax}"
+         [class.disabledInput]="disabled"
+  >
+  <span *ngIf="showBax" [class.disabled]="disabled">$</span>
+</div>

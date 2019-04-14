@@ -1,0 +1,14 @@
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+
+}
+
+.default {
+  border: 2px solid #1c00bf;
+}
+
+.added {
+  border: 2px solid #ff9500;
+}
+
