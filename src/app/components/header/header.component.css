@@ -1,0 +1,45 @@
+.header {
+  justify-content: space-between;
+  background-color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.container-fluid {
+  margin-top: 20%;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.auto_icon {
+  padding: 0;
+  color: #7ec4ff;
+  margin-left: 2%;
+}
+
+.icon-color {
+  color: #7ec4ff;
+}
+
+.mat-icon {
+  vertical-align: middle;
+  width: 32px;
+}
+
+.welcome {
+  /*padding: 0;*/
+  padding-top: 1%;
+  text-align: center;
+  font-size: 11pt;
+}
+
+.drivers-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.progr-bar {
+  margin: 0 0 25px 0;
+}

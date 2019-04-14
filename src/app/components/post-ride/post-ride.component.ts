@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { startWith, takeUntil } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-ride',
@@ -16,17 +17,19 @@ export class PostRideComponent implements OnInit, OnDestroy {
   public disable1 = false;
   public disable2 = false;
   public disable3 = false;
+  public saving = false;
   private ngDestroy$: Subject<void> = new Subject();
   constructor(
     private fb: FormBuilder,
+    private router: Router,
   ) { }
 
   ngOnInit() {
     this.form = this.fb.group({
-      willing: 3,
-      price1: null,
-      price2: null,
-      price3: null,
+      willing: 2,
+      price1: 25.00,
+      price2: 20.00,
+      price3: 15.00,
     });
     this.form.get('willing').valueChanges.pipe(
       startWith(this.form.get('willing').value),
@@ -61,5 +64,15 @@ export class PostRideComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.ngDestroy$.next();
     this.ngDestroy$.complete();
+  }
+
+  postRide(): void {
+    if (this.agreeFbProfile.value && this.agreeTerms.value) {
+      this.saving = true;
+      setTimeout(() => {
+        this.saving = false;
+        this.router.navigate(['/joined/ride']);
+      }, 1000);
+    }
   }
 }

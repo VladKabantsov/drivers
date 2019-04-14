@@ -2,8 +2,10 @@
   <app-select [label]="'From:'" [control]="form.get('from')" [items]="from"></app-select>
   <app-select [label]="'To:'" [control]="form.get('to')" [items]="to"></app-select>
 </div>
+<h4 class="font-weight-bold text-center date-border" (click)="openPicker()">{{form.get('date').value | date: 'EEEE, MMMM d'}}</h4>
 <app-riders-card></app-riders-card>
 <app-riders-card></app-riders-card>
-<div class="text-center">
-  <button class="btn btn-primary align">Post a new ride!</button>
+<div class="text-center" (click)="postRide()">
+  <mat-spinner class="centered" [diameter]="25" *ngIf="saving"></mat-spinner>
+  <button *ngIf="!saving" class="btn btn-primary align">Post a new ride!</button>
 </div>

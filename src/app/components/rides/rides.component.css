@@ -1,0 +1,12 @@
+.date-border {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+:host /deep/ .mat-dialog-container {
+  padding: 11px;
+}
+
+.centered {
+  margin: auto;
+}

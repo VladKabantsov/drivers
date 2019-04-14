@@ -5,4 +5,4 @@
 <h4 class="font-weight-bold text-center">{{form.get('date').value | date: 'EEEE, MMMM d'}}</h4>
 <app-riders-card></app-riders-card>
 <p>You have joined Gavin`s ride. We have sent an e-mail to both of you so you can wrap up the details!</p>
-<button class="close-btn align">Close window</button>
+<button class="close-btn align" (click)="close()">Close window</button>

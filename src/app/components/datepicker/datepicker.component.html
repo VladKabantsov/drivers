@@ -1,0 +1,10 @@
+<div class="text-center">
+  <span>Select a Date and Time:</span>
+  <ngb-datepicker displayMonths="1" navigation="arrows"
+                  outsideDays="visible"
+                  class="datepicker"
+                  [(ngModel)]="date"
+  ></ngb-datepicker>
+  <ngb-timepicker [(ngModel)]="time" [meridian]="true"></ngb-timepicker>
+  <button class="btn btn-primary" (click)="setDate()">Set date</button>
+</div>

@@ -10,6 +10,7 @@
   <app-checkbox [control]="agreeFbProfile" [label]="'I agree to share my facebook profile with riders'"></app-checkbox>
   <app-checkbox [control]="agreeTerms" [label]="'I agree to the terms and conditions'"></app-checkbox>
 </div>
-<div class="text-center">
-  <button class="btn btn-primary align">Post my ride</button>
+<div class="text-center" (click)="postRide()">
+  <mat-spinner class="centered" [diameter]="25" *ngIf="saving"></mat-spinner>
+  <button class="btn btn-primary align" *ngIf="!saving">Post my ride</button>
 </div>

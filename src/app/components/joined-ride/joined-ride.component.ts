@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { SelectableItems } from '../../shared/components/select/select.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-joined-ride',
@@ -20,7 +21,7 @@ export class JoinedRideComponent implements OnInit {
     { id: 1, name: 'East Hampton' },
     { id: 2, name: 'Southampton' },
   ];
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -30,4 +31,7 @@ export class JoinedRideComponent implements OnInit {
     });
   }
 
+  closeWindow(): void {
+    this.router.navigate(['/posted/ride']);
+  }
 }
