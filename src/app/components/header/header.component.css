@@ -1,0 +1,29 @@
+.header {
+    justify-content: space-between;
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.container-fluid {
+    margin-top: 20%;
+}
+.auto_icon {
+    padding:0;
+    color: #7ec4ff;
+    margin-left: 2%;
+}
+.save_icon {
+    color: #7ec4ff;
+}
+.mat-icon {
+    vertical-align: middle;
+    width: 32px;
+}
+.welcome {
+    /*padding: 0;*/
+    padding-top: 1%;
+    text-align: center;
+    font-size: 11pt;
+}
+
+
